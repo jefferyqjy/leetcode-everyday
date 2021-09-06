@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @description:
+ * @description:https://leetcode-cn.com/problems/next-greater-element-i/
  * @author: jefferyqjy
  * @datetime: 2021/9/1 16:01
  */

@@ -13,7 +13,7 @@ public class OfficialSolution {
 
     /**
      * 官方的解法和MySolution中的解法二一样，只不过用while代替了for循环，在代码量上更简洁了一点
-     * 
+     *
      * @param s
      * @return
      */

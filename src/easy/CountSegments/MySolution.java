@@ -1,7 +1,7 @@
 package easy.CountSegments;
 
 /**
- * @description:
+ * @description: 原题链接：https://leetcode-cn.com/problems/number-of-segments-in-a-string/
  * @author: jefferyqjy
  * @datetime: 2021/10/7 15:49
  */

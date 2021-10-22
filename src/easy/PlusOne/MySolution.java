@@ -8,15 +8,30 @@ package easy.PlusOne;
 public class MySolution {
 
     public static void main(String[] args) {
-        int[] digits = {6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3};
+        int[] digits = {3,3,9,3,4,4,4,2};
         int[] newDigits = plusOne(digits);
         for (int i = 0; i < newDigits.length; i++) {
-            System.out.println(newDigits[i]);
+            System.out.print(newDigits[i] + " ");
         }
-//        System.out.println(Integer.valueOf(String.valueOf('1')));
     }
 
     public static int[] plusOne(int[] digits) {
-        return null;
+        int index = 1;
+        while (carry(digits, digits.length - index)) {
+            index++;
+            if (index > digits.length) {
+                int[] newDigits = new int[digits.length + 1];
+                for (int i = 0; i < digits.length; i++) {
+                    newDigits[i + 1] = digits[i];
+                }
+                digits = newDigits;
+            }
+        }
+        return digits;
+    }
+
+    private static boolean carry(int[] digits, int i) {
+        digits[i] = (digits[i] + 1) % 10;
+        return digits[i] == 0;
     }
 }

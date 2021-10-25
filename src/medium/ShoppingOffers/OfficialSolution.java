@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @description:
+ * @description: 官方题解：https://leetcode-cn.com/problems/shopping-offers/solution/da-li-bao-by-leetcode-solution-p1ww/
  * @author: jefferyqjy
  * @datetime: 2021/10/24 23:36
  */

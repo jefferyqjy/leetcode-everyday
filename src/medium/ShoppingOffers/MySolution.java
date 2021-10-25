@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @description:
+ * @description: 题目链接：https://leetcode-cn.com/problems/shopping-offers/
  * @author: jefferyqjy
  * @datetime: 2021/10/24 17:53
  */

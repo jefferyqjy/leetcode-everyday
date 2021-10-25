@@ -20,6 +20,9 @@ public class MySolution {
 
     /**
      * 解决方案一，用map存储
+     * 复杂度分析：
+     *  时间复杂度：O(n)，其中 n 为数组的长度。
+     *  空间复杂度：O(n)，其中 n 为数组的长度，使用哈希表需要开辟额外的空间。
      * @param nums
      * @return
      */
@@ -45,6 +48,14 @@ public class MySolution {
         return list;
     }
 
+    /**
+     * 排序后累加次数
+     * 复杂度分析：
+     *  时间复杂度：O(n)，其中 n 为数组的长度。
+     *  空间复杂度：O(1)，其中 n 为数组的长度，使用哈希表需要开辟额外的空间。
+     * @param nums
+     * @return
+     */
     public static List<Integer> majorityElement2(int[] nums) {
         int size = nums.length / 3;
         List<Integer> list = new ArrayList<>();

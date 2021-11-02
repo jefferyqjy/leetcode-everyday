@@ -11,13 +11,13 @@ import java.util.Map;
  * @datetime: 2021/10/24 23:36
  */
 public class OfficialSolution {
-    Map<List<Integer>, Integer> memo = new HashMap<List<Integer>, Integer>();
+    Map<List<Integer>, Integer> memo = new HashMap<>();
 
     public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
         int n = price.size();
 
         // 过滤不需要计算的大礼包，只保留需要计算的大礼包
-        List<List<Integer>> filterSpecial = new ArrayList<List<Integer>>();
+        List<List<Integer>> filterSpecial = new ArrayList<>();
         for (List<Integer> sp : special) {
             int totalCount = 0, totalPrice = 0;
             for (int i = 0; i < n; ++i) {
